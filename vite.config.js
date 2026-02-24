@@ -10,4 +10,12 @@ export default defineConfig({
     },
   }, 
   base: "/PMP/",
+  build: {
+    // This ensures Vite treats index.html as the source of truth
+    rollupOptions: {
+      input: {
+        main: './index.html', 
+      }
+    }
+  }
 });
