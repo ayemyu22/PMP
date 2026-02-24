@@ -9,8 +9,8 @@ export default function Layout({ children, currentPageName }) {
 
   const navItems = [
     { name: 'Главная', page: 'Dashboard', icon: Home },
-    { name: 'Техники', page: 'Techniques', icon: BookOpen },
-    { name: 'Планировщик уроков', page: 'LessonPlanner', icon: Calendar },
+    { name: 'Методы', page: 'Techniques', icon: BookOpen },
+    { name: 'Планирование уроков', page: 'LessonPlanner', icon: Calendar },
   ];
 
   return (

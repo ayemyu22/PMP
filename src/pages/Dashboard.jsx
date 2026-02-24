@@ -48,13 +48,13 @@ export default function Dashboard() {
         <div className="relative z-10 max-w-2xl">
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="w-5 h-5 text-indigo-200" />
-            <span className="text-indigo-200 text-sm font-medium">Добро пожаловать в ПМП: Поиск Мастерство Проектирование </span>
+            <span className="text-indigo-200 text-sm font-medium">Добро пожаловать в ПМП: Поиск. Мастерство. Проектирование. </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Осваивайте методы преподавания и планируйте уроки эффективнее
           </h1>
           <p className="text-indigo-100 text-lg mb-8 leading-relaxed">
-            Изучайте проверенные образовательные методы, открывайте новые педагогические стратегии и создавайте увлекательные планы уроков — всё в одном месте.
+            Изучайте проверенные методы обучения, открывайте новые педагогические стратегии и создавайте увлекательные планы уроков — всё в одном месте.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link

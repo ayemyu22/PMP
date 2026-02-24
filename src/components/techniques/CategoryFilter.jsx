@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const categories = [
-  { value: 'all', label: 'Все техники' },
+  { value: 'all', label: 'Все методы' },
   { value: 'active_learning', label: 'Активное обучение' },
   { value: 'assessment', label: 'Оценивание' },
   { value: 'classroom_management', label: 'Управление классом' },
@@ -10,7 +10,7 @@ const categories = [
   { value: 'engagement', label: 'Вовлечённость' },
   { value: 'collaboration', label: 'Сотрудничество' },
   { value: 'technology_integration', label: 'Технологии' },
-  { value: 'questioning', label: 'Вопросная техника' },
+  { value: 'questioning', label: 'Вопросная методы' },
 ];
 
 export default function CategoryFilter({ selected, onChange }) {
