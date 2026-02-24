@@ -9,7 +9,7 @@ import PageNotFound from './lib/PageNotFound.jsx';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PMP">
       <Routes>
         <Route path="/" element={<Navigate to="/Dashboard" replace />} />
         <Route path="/Dashboard" element={<Layout currentPageName="Dashboard"><Dashboard /></Layout>} />
