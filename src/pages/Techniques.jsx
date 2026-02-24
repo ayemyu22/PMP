@@ -28,12 +28,12 @@ export default function Techniques() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">Педагогические техники</h1>
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">Педагогические методы</h1>
           <p className="text-slate-600">Изучайте и осваивайте проверенные образовательные методы</p>
         </div>
         <div className="flex items-center gap-3 text-sm text-slate-500">
           <BookOpen className="w-4 h-4" />
-          <span>{filteredTechniques.length} техник</span>
+          <span>{filteredTechniques.length} метод</span>
         </div>
       </div>
 
@@ -43,7 +43,7 @@ export default function Techniques() {
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
             <Input
-              placeholder="Поиск техник..."
+              placeholder="Поиск методов..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-12 h-12 text-base border-slate-200 focus:border-indigo-300 focus:ring-indigo-200 rounded-xl"
@@ -93,11 +93,11 @@ export default function Techniques() {
           className="text-center py-16 bg-white rounded-2xl border border-slate-200"
         >
           <BookOpen className="w-12 h-12 text-slate-300 mx-auto mb-4" />
-          <h3 className="text-lg font-medium text-slate-900 mb-2">Техники не найдены</h3>
+          <h3 className="text-lg font-medium text-slate-900 mb-2">Методы не найдены</h3>
           <p className="text-slate-500">
             {searchQuery || selectedCategory !== 'all'
               ? 'Попробуйте изменить запрос или фильтры'
-              : 'Новые техники появятся совсем скоро!'}
+              : 'Новые методы появятся совсем скоро!'}
           </p>
         </motion.div>
       )}

@@ -27,9 +27,9 @@ export default function TechniqueDetail() {
   if (!technique) {
     return (
       <div className="max-w-4xl mx-auto text-center py-16">
-        <h2 className="text-2xl font-semibold text-slate-900 mb-4">Техника не найдена</h2>
+        <h2 className="text-2xl font-semibold text-slate-900 mb-4">Метод не найден</h2>
         <Link to={createPageUrl('Techniques')} className="text-indigo-600 hover:text-indigo-700">
-          ← Назад к техникам
+          ← Назад к методам
         </Link>
       </div>
     );
@@ -49,7 +49,7 @@ export default function TechniqueDetail() {
         className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-8 group"
       >
         <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-        Назад к техникам
+        Назад к методам
       </Link>
 
       {/* Header */}
@@ -150,7 +150,7 @@ export default function TechniqueDetail() {
           transition={{ delay: 0.4 }}
           className="bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl p-8 text-center"
         >
-          <h3 className="text-xl font-semibold text-white mb-2">Готовы применить эту технику?</h3>
+          <h3 className="text-xl font-semibold text-white mb-2">Готовы применить этот метод?</h3>
           <p className="text-indigo-100 mb-6">Создайте план урока с использованием этого метода</p>
           <Link
             to={createPageUrl('LessonPlanner')}

@@ -87,7 +87,7 @@ export default function LessonPlanner() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">Планировщик уроков</h1>
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">Планирование уроков</h1>
           <p className="text-slate-600">Создавайте и управляйте планами уроков</p>
         </div>
         <Button
@@ -160,7 +160,7 @@ export default function LessonPlanner() {
                   </span>
                   {plan.techniques_used?.length > 0 && (
                     <span className="text-xs text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
-                      {plan.techniques_used.length} техник{plan.techniques_used.length === 1 ? 'а' : ''}
+                      {plan.techniques_used.length} методы{plan.techniques_used.length === 1 ? 'а' : ''}
                     </span>
                   )}
                 </div>
@@ -244,13 +244,13 @@ export default function LessonPlanner() {
               </div>
 
               <div>
-                <Label>Используемые техники</Label>
+                <Label>Используемые методы</Label>
                 <Select
                   value={formData.techniques_used[0] || ''}
                   onValueChange={(value) => setFormData({ ...formData, techniques_used: [value] })}
                 >
                   <SelectTrigger className="mt-1">
-                    <SelectValue placeholder="Выберите технику" />
+                    <SelectValue placeholder="Выберите метод" />
                   </SelectTrigger>
                   <SelectContent>
                     {techniques.map((tech) => (

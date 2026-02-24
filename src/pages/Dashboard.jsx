@@ -12,7 +12,7 @@ export default function Dashboard() {
 
   const stats = [
     {
-      label: 'Доступно техник',
+      label: 'Доступно методов',
       value: techniques.length,
       icon: BookOpen,
       color: 'from-indigo-500 to-indigo-600',
@@ -51,7 +51,7 @@ export default function Dashboard() {
             <span className="text-indigo-200 text-sm font-medium">Добро пожаловать в ПМП: Поиск Мастерство Проектирование </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Осваивайте техники преподавания и планируйте уроки эффективнее
+            Осваивайте методы преподавания и планируйте уроки эффективнее
           </h1>
           <p className="text-indigo-100 text-lg mb-8 leading-relaxed">
             Изучайте проверенные образовательные методы, открывайте новые педагогические стратегии и создавайте увлекательные планы уроков — всё в одном месте.
@@ -62,7 +62,7 @@ export default function Dashboard() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-indigo-600 rounded-xl font-semibold hover:bg-indigo-50 transition-colors shadow-lg"
             >
               <BookOpen className="w-5 h-5" />
-              Изучить техники
+              Изучить методы
             </Link>
             <Link
               to={createPageUrl('LessonPlanner')}
@@ -112,12 +112,12 @@ export default function Dashboard() {
         >
           <div className="p-6 border-b border-slate-100">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold text-slate-900">Избранные техники</h2>
+              <h2 className="text-lg font-semibold text-slate-900">Избранные методы</h2>
               <Link
                 to={createPageUrl('Techniques')}
                 className="text-indigo-600 text-sm font-medium hover:text-indigo-700 flex items-center gap-1"
               >
-                Все техники
+                Все методы
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -155,7 +155,7 @@ export default function Dashboard() {
                 <TrendingUp className="w-6 h-6 text-indigo-600" />
               </div>
               <div>
-                <h3 className="font-medium text-slate-900">Просмотр техник</h3>
+                <h3 className="font-medium text-slate-900">Просмотр методы</h3>
                 <p className="text-slate-500 text-sm">Открывайте новые методы преподавания</p>
               </div>
               <ArrowRight className="w-5 h-5 text-slate-400 ml-auto group-hover:text-indigo-600 group-hover:translate-x-1 transition-all" />
