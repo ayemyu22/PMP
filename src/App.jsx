@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/TechniqueDetail" element={<Layout currentPageName="TechniqueDetail"><TechniqueDetail /></Layout>} />
         <Route path="/LessonPlanner" element={<Layout currentPageName="LessonPlanner"><LessonPlanner /></Layout>} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
