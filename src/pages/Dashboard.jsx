@@ -48,7 +48,7 @@ export default function Dashboard() {
         <div className="relative z-10 max-w-2xl">
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="w-5 h-5 text-indigo-200" />
-            <span className="text-indigo-200 text-sm font-medium">Добро пожаловать в TeachMaster</span>
+            <span className="text-indigo-200 text-sm font-medium">Добро пожаловать в ПМП: Поиск Мастерство Проектирование </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Осваивайте техники преподавания и планируйте уроки эффективнее
