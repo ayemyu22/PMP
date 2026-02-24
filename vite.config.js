@@ -8,14 +8,15 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-  }, 
+  },
+  // Ensure the base matches your GitHub repo name exactly
   base: "/PMP/",
   build: {
-    // This ensures Vite treats index.html as the source of truth
+    outDir: 'dist',
     rollupOptions: {
       input: {
-        main: './index.html', 
-      }
-    }
-  }
+        main: path.resolve(__dirname, 'index.html'),
+      },
+    },
+  },
 });
